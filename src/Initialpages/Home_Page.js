@@ -1,13 +1,13 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, ScrollView } from 'react-native'
 import React from 'react'
-import CounterDisplay from '../components/CounterDisplay'
+import DataDisplay from '../components/DataDisplay'
 
 const Home_Page = () => {
   return (
-    <View style={styles.container}>
-      <Text>Home_Page</Text>
-      <CounterDisplay />
-    </View>
+    <ScrollView contentContainerStyle={styles.container}>
+      <Text style={styles.title}>Home Page</Text>
+      <DataDisplay />
+    </ScrollView>
   )
 }
 
@@ -15,8 +15,14 @@ export default Home_Page
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
+    flexGrow: 1,
+    justifyContent: 'flex-start', // Changed to flex-start for scrollview
     alignItems: 'center',
+    paddingVertical: 20, // Added padding
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
   }
 })
