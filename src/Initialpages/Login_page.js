@@ -11,7 +11,7 @@ const Login_page = ({ navigation }) => {
     <View style={styles.Container}>
       <View style={styles.Innnerdatas}>
         {Data.map((i) => {
-          return (<TouchableOpacity style={styles.IndividualBoxes} key={i.id} onPress={() => navigation.navigate(i.Title)}>
+          return (<TouchableOpacity style={styles.IndividualBoxes} key={i.id} onPress={() => navigation.replace(i.Title)}>
             <Text>{i.Title}</Text>
           </TouchableOpacity>)
         })}

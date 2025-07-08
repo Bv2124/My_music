@@ -14,7 +14,10 @@ function Navigation() {
         <NavigationContainer>
             <Stack.Navigator initialRouteName='Login_page' screenOptions={{ headerBackTitle:"text" }}>
                 <Stack.Screen name="Login_page" component={Login_page} />
-                <Stack.Screen name="Home_Page" component={Home_Page} />
+                <Stack.Screen name="Home_Page" component={Home_Page}  options={{
+                    headerShown:false,
+                    gestureEnabled:false
+                }}/>
                 <Stack.Screen name="Lists" component={Lists} />
             </Stack.Navigator>
         </NavigationContainer>
