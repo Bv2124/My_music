@@ -7,7 +7,16 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "storybook-generate": "npx react-native-storybook-loader",
+    "storybook-watch": "npx react-native-storybook-loader --watch",
+    "start-storybook": "react-native start --reset-cache"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "outputFile": "./.storybook/storybook.requires.js",
+      "pattern": "**/*.stories.@(js|jsx|ts|tsx)"
+    }
   },
   "dependencies": {
     "@gorhom/bottom-sheet": "^5.1.5",
@@ -38,12 +47,16 @@
     "@react-native/eslint-config": "0.77.1",
     "@react-native/metro-config": "0.77.1",
     "@react-native/typescript-config": "0.77.1",
+    "@storybook/addon-ondevice-actions": "^7.6.20",
+    "@storybook/addon-ondevice-controls": "^7.6.20",
+    "@storybook/react-native": "^7.6.20",
     "@types/jest": "^29.5.13",
     "@types/react": "^18.2.6",
     "@types/react-test-renderer": "^18.0.0",
     "eslint": "^8.19.0",
     "jest": "^29.6.3",
     "prettier": "2.8.8",
+    "react-native-storybook-loader": "^2.0.5",
     "react-test-renderer": "18.3.1",
     "typescript": "5.0.4"
   },
