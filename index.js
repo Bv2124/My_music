@@ -8,7 +8,7 @@ import {name as appName} from './app.json';
 // Import StorybookUIRoot, assuming .storybook/index.js exports it as default
 // and also handles its own AppRegistry.registerComponent for the same appName.
 // The key is that only ONE AppRegistry.registerComponent for appName should run.
-import StorybookUIRoot from './.storybook';
+
 
 // --- Storybook Toggle ---
 // Set this to true to load Storybook, false to load the main app

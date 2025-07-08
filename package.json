@@ -7,8 +7,7 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest",
-    "storybook-generate": "sb-rn-get-stories --config-path .storybook"
+    "test": "jest"
   },
   "dependencies": {
     "@react-native-masked-view/masked-view": "^0.3.2",
@@ -34,9 +33,6 @@
     "@react-native/eslint-config": "0.77.1",
     "@react-native/metro-config": "0.77.1",
     "@react-native/typescript-config": "0.77.1",
-    "@storybook/addon-ondevice-actions": "^6.5.7",
-    "@storybook/addon-ondevice-controls": "^6.5.7",
-    "@storybook/react-native": "^6.5.7",
     "@types/jest": "^29.5.13",
     "@types/react": "^18.2.6",
     "@types/react-test-renderer": "^18.0.0",
