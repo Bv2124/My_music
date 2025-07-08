@@ -12,10 +12,10 @@ const Stack = createStackNavigator();
 function Navigation() {
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName='Login_page' screenOptions={{ headerBackTitle:"text" }}>
-                <Stack.Screen name="Login_page" component={Login_page} />
-                <Stack.Screen name="Home_Page" component={Home_Page} />
-                <Stack.Screen name="Lists" component={Lists} />
+            <Stack.Navigator initialRouteName='Login_page' screenOptions={{ headerShown: false}}>
+                <Stack.Screen name="Login_page" component={Login_page} screenOptions={{ headerShown: false}} />
+                <Stack.Screen name="Home_Page" component={Home_Page} screenOptions={{ headerShown: false}} />
+                <Stack.Screen name="Lists" component={Lists} screenOptions={{ headerShown: false}} />
             </Stack.Navigator>
         </NavigationContainer>
     );
